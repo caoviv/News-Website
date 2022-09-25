@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Giveaway - Game Informer</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo"><a href="index.html" target="_self" title="Link to Homepage"><img class="logo" src="img\game-informer-logo.svg" alt="Game Informer Logo"></a></div>
+        <nav class="header-nav">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Link to News"> News</a>
+            <a href="https://www.youtube.com/watch?v=EpX1_YJPGAY" target="_blank" title="Link to Previews"> Previews</a>
+            <a href="https://www.youtube.com/watch?v=8oE5Z2GLhNc" target="_blank" title="Link to Features"> Features</a>
+            <a href="https://www.youtube.com/watch?v=ZXpThNX9IRc" target="_blank" title="Link to Podcasts"> Podcasts</a>
+            <a href="https://www.youtube.com/watch?v=4w2icYjruEY" target="_blank" title="Link to Videos"> Videos</a>
+            <a href="https://www.youtube.com/watch?v=qPJuzB8CL8o" target="_blank" title="Link to 2022 Release List"> 2022 Release List</a>
+            <a href="https://www.youtube.com/watch?v=ORuTA9a_YVo" target="_blank" title="Link to Magazine"> Magazine</a>
+        </nav>
+    </header>
+    
+    <section class="giveaway-wrap">
+        <div class="giveaway-content">
+            <img class="giveaway-img" src="/img/giveaway.jpg" alt="Picture of a PC and Dangerfield clothes">
+            <div class="giveaway-text">
+                <h1>Dangerfield X Aftershock PC Giveaway</h1>
+                <h4>WIN an Aftershock Gaming Setup PLUS a $3000 Dangerfield wardrobe!</h4>
+                <p class="prize">Step up your (fashion) game with your chance to win this insane prize pack from Aftershock & Dangerfield. Our lucky gamer will receive a $3000 wardrobe from Dangerfield, Plus a fully decked-out gaming setup from Aftershock PC! It's free to enter.</p>
+                <p class="requirement">*You must be 18+ to enter and within Australia.</p>
+                <p><span class="spec-heading">Check out what you're getting in the setup! </span><br>
+                    Chassis: Aftershock Zeal Air Case <br>
+                    Motherboard: Asus Prime B550M A Wi-Fi II <br>
+                    CPU: AMD Ryzen 5 3600 | 4.2GHz | 6 Cores 12 Threads <br>
+                    RAM: 16 GB Kingston Fury Beast Black 3600 MHz <br>
+                    GPU: Asus RTX 3060 Dual OC 12GB V2 <br>
+                    CPU Cooler: Aftershock M40 Frost Performance Cooler <br>
+                    SSD: 500GB MSI Spatium M390 M.2 NVMe (3300MBs|2300MBs) <br>
+                    HDD: 2TB Seagate Barracuda 7200RPM 3.5” <br>
+                    Fans: 4x Aftershock 120mm RGB Fans <br>
+                    PSU: 750W Asus TUF Gaming 80+ Bronze <br>
+                    OS: Windows 11 Home Activated <br>
+                    Network: Next Gen Intel WiFi 6 & Bluetooth 5.1 <br>
+                    Keyboard: NZXT Function Red Mechanical USB Black Gaming Keyboard <br>
+                    Mouse: Aftershock Hexar Ultra lite Gaming Mouse <br>
+                    Headset: HyperX Cloud Alpha S / Gaming Headset Blue <br>
+                    Monitor: Gigabyte G27F 27" Gaming Monitor / 1080P 144Hz
+                </p>
+                <form method="post" action="send.php" class="giveaway-survey">
+                    <div class="survey-item-wrap">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="glow" required name="full-name" placeholder="John Doe">
+                    </div>
+                    
+                    <div class="survey-item-wrap">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="glow" required name="email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="survey-item-wrap">
+                        <label style="css" for="dob">Age *</label><br>
+                        <input type="date" id="dob" class="dob" required name="dob">
+                    </div>
+
+                    <div class="survey-item-wrap">
+                        <label for="gender">Gender *</label>
+                        <select id="gender" class="glow" name="gender" required>
+                            <option value="">Please select</option>
+                            <option value="non-binary">Non-binary</option>
+                            <option value="woman">Woman</option>
+                            <option value="man">Man</option>
+                            <option value="two-spirit">Two spirit</option>
+                            <option value="none">None of the above</option>
+                        </select>
+                    </div>
+                    
+                    <div class="survey-item-wrap">
+                        <label for="fav-game">What is your favourite game to play on PC?</label>
+                        <input type="text" id="fav-game" class="glow" name="fav-game">
+                    </div>
+                    
+                    
+                    <div class="survey-item-wrap">
+                        <label>How often do you play games on your PC?</label>
+                        <div>
+                            <input type="radio" id="never" name="gaming-frequency" value="never">
+                            <label for="never">Never</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rarely" name="gaming-frequency" value="rarely">
+                            <label for="rarely">Rarely (can’t remember the last time)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="sometimes" name="gaming-frequency" value="sometimes">
+                            <label for="sometimes">Sometimes (not regularly)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="often" name="gaming-frequency" value="often">
+                            <label for="often">Often (weekly)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="daily" name="gaming-frequency" value="daily">
+                            <label for="daily">Daily</label>
+                        </div>
+                    </div>
+                    
+                    <div class="survey-item-wrap">
+                        <label>What game genre do you play?</label>
+                        <div>
+                            <input type="checkbox" id="action" name="game-genre" value="action">
+                            <label for="action">Action</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="adventure" name="game-genre" value="adventure">
+                            <label for="adventure">Adventure</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="card" name="game-genre" value="card">
+                            <label for="card">Card</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rpg" name="game-genre" value="rpg">
+                            <label for="rpg">RPG</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sports" name="game-genre" value="sports">
+                            <label for="sports">Sports</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="strategy" name="game-genre" value="strategy">
+                            <label for="strategy">Strategy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other" name="game-genre" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="survey-item-wrap">
+                        <label for="pc-preference">What do you like/dislike about you PC setup? Why?</label>
+                        <textarea id="pc-preference" class="glow" name="pc-preference"></textarea>
+                    </div>
+                    
+                    <div class="survey-item-wrap">
+                        <input class="enter-button" type="submit" value="Enter Giveaway">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-logo"><a href="index.html" target="_self" title="Link to Homepage"><img class="logo" src="/img/gi-logo-footer.svg" alt="Game Informer Logo"></a></div>
+        
+        <nav class="socials-nav">
+            <a href="https://www.youtube.com/watch?v=NL6CDFn2i3I" target="_blank" title="Link to Game Informer's Facebook"><img class="socials-icon" src="/img/footer_facebook.svg" alt="Facebook Logo"></a>
+            <a href="https://www.youtube.com/watch?v=EwTZ2xpQwpA" target="_blank" title="Link to Game Informer's Instagram"><img class="socials-icon" src="/img/footer_instagram.svg" alt="Instagram Logo"></a>
+            <a href="https://www.youtube.com/watch?v=1wnE4vF9CQ4" target="_blank" title="Link to Game Informer's Twitch Channel"><img class="socials-icon" src="/img/footer_twitch.svg" alt="Twitch Logo"></a>
+            <a href="https://www.youtube.com/watch?v=0EqSXDwTq6U" target="_blank" title="Link to Game Informer's Twitter"><img class="socials-icon" src="/img/footer_twitter.svg" alt="Twitter Logo"></a>
+            <a href="https://www.youtube.com/watch?v=CsGYh8AacgY" target="_blank" title="Link to Game Informer's Youtube Channel"><img class="socials-icon" src="/img/footer_youtube.svg" alt="Youtube Logo"></a>
+        </nav>
+        
+        <nav class="footer-nav">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Link to News"> Help & Customer Service</a>
+            <a href="https://www.youtube.com/watch?v=EpX1_YJPGAY" target="_blank" title="Link to Previews"> RSS feeds</a>
+            <a href="https://www.youtube.com/watch?v=8oE5Z2GLhNc" target="_blank" title="Link to Features"> Staff</a>
+            <a href="https://www.youtube.com/watch?v=ZXpThNX9IRc" target="_blank" title="Link to Podcasts"> Privacy Policy</a>
+            <a href="https://www.youtube.com/watch?v=4w2icYjruEY" target="_blank" title="Link to Videos"> Terms and Conditions</a>
+            <a href="https://www.youtube.com/watch?v=qPJuzB8CL8o" target="_blank" title="Link to 2022 Release List"> Code of Conduct</a>
+            <a href="https://www.youtube.com/watch?v=ORuTA9a_YVo" target="_blank" title="Link to Magazine"> Advertising</a>
+        </nav>
+        <p class="copyright">&copy; 1991 to 2022 Game Informer. All Rights Reserved.</p>
+    </footer>
+</body>
