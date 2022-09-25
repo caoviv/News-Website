@@ -15,6 +15,7 @@ header {
     align-items: center;
     width: 100%;
     position: fixed;
+    z-index: 2;
     top: 0%;
     background-color: white;
 }
@@ -235,6 +236,7 @@ footer {
 
 .exclamation-mark {
     position: absolute;
+    z-index: 1;
     width: 20px;
     transform: rotate(340deg);
 }
