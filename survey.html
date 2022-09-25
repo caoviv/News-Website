@@ -26,11 +26,14 @@
         <div class="giveaway-content">
             <img class="giveaway-img" src="/img/giveaway.jpg" alt="Picture of a PC and Dangerfield clothes">
             <div class="giveaway-text">
-                <h1>Dangerfield X Aftershock PC Giveaway</h1>
-                <h4>WIN an Aftershock Gaming Setup PLUS a $3000 Dangerfield wardrobe!</h4>
-                <p class="prize">Step up your (fashion) game with your chance to win this insane prize pack from Aftershock & Dangerfield. Our lucky gamer will receive a $3000 wardrobe from Dangerfield, Plus a fully decked-out gaming setup from Aftershock PC! It's free to enter.</p>
+                <h1 class="center">Dangerfield X Aftershock PC Giveaway</h1>
+                <h4 class="center">WIN an Aftershock Gaming Setup PLUS a $3000 Dangerfield wardrobe!</h4>
+                <p  class="center">Step up your (fashion) game with your chance to win this insane prize pack from Aftershock & Dangerfield. Our lucky gamer will receive a $3000 wardrobe from Dangerfield, Plus a fully decked-out gaming setup from Aftershock PC! It's free to enter.</p>
                 <p class="requirement">*You must be 18+ to enter and within Australia.</p>
-                <p><span class="spec-heading">Check out what you're getting in the setup! </span><br>
+                <p class="spec-heading" onMouseOver="wiggle();" onMouseOut="wiggleReset()" onClick="displaySpecs()">
+                    Click here to check out what you're getting in the setup <span><img class="exclamation-mark" src="/img/exclamation-mark.png" alt="exclamation mark"></span>
+                </p>
+                <p class="specs">
                     Chassis: Aftershock Zeal Air Case <br>
                     Motherboard: Asus Prime B550M A Wi-Fi II <br>
                     CPU: AMD Ryzen 5 3600 | 4.2GHz | 6 Cores 12 Threads <br>
@@ -48,25 +51,26 @@
                     Headset: HyperX Cloud Alpha S / Gaming Headset Blue <br>
                     Monitor: Gigabyte G27F 27" Gaming Monitor / 1080P 144Hz
                 </p>
+                
                 <form method="post" action="send.php" class="giveaway-survey">
                     <div class="survey-item-wrap">
                         <label for="name">Full Name *</label>
-                        <input type="text" id="name" class="glow" required name="full-name" placeholder="John Doe">
+                        <input type="text" id="name" class="glow" required name="full-name" placeholder="John Doe" onChange="displayEmail()">
                     </div>
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap email-wrap">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" class="glow" required name="email" placeholder="name@example.com">
+                        <input type="email" id="email" class="glow" required name="email" placeholder="name@example.com" onChange="displayDob()">
                     </div>
-
-                    <div class="survey-item-wrap">
-                        <label for="dob">Age *</label><br>
-                        <input type="date" id="dob" class="dob" required name="dob">
+                    
+                    <div class="survey-item-wrap dob-wrap">
+                        <label for="dob">Date of birth *</label><br>
+                        <input type="date" id="dob" class="dob" required name="dob" onChange="displayGender()">
                     </div>
-
-                    <div class="survey-item-wrap">
+                    
+                    <div class="survey-item-wrap gender-wrap">
                         <label for="gender">Gender *</label>
-                        <select id="gender" class="glow" name="gender" required>
+                        <select id="gender" class="glow" name="gender" required onChange="displayFavGame()">
                             <option value="">Please select</option>
                             <option value="non-binary">Non-binary</option>
                             <option value="woman">Woman</option>
@@ -76,74 +80,74 @@
                         </select>
                     </div>
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap fav-wrap">
                         <label for="fav-game">What is your favourite game to play on PC?</label>
-                        <input type="text" id="fav-game" class="glow" name="fav-game">
+                        <input type="text" id="fav-game" class="glow" name="fav-game" onChange="displayFrequency()">
                     </div>
                     
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap frequency-wrap">
                         <label>How often do you play games on your PC?</label>
                         <div>
-                            <input type="radio" id="never" name="gaming-frequency" value="never">
+                            <input type="radio" id="never" name="gaming-frequency" value="never" onChange="displayGenre()">
                             <label for="never">Never</label>
                         </div>
                         <div>
-                            <input type="radio" id="rarely" name="gaming-frequency" value="rarely">
+                            <input type="radio" id="rarely" name="gaming-frequency" value="rarely" onChange="displayGenre()">
                             <label for="rarely">Rarely (can’t remember the last time)</label>
                         </div>
                         <div>
-                            <input type="radio" id="sometimes" name="gaming-frequency" value="sometimes">
+                            <input type="radio" id="sometimes" name="gaming-frequency" value="sometimes" onChange="displayGenre()">
                             <label for="sometimes">Sometimes (not regularly)</label>
                         </div>
                         <div>
-                            <input type="radio" id="often" name="gaming-frequency" value="often">
+                            <input type="radio" id="often" name="gaming-frequency" value="often" onChange="displayGenre()">
                             <label for="often">Often (weekly)</label>
                         </div>
                         <div>
-                            <input type="radio" id="daily" name="gaming-frequency" value="daily">
+                            <input type="radio" id="daily" name="gaming-frequency" value="daily" onChange="displayGenre()">
                             <label for="daily">Daily</label>
                         </div>
                     </div>
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap genre-wrap">
                         <label>What game genre do you play?</label>
                         <div>
-                            <input type="checkbox" id="action" name="game-genre" value="action">
+                            <input type="checkbox" id="action" name="game-genre" value="action" onChange="displayPreference()">
                             <label for="action">Action</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="adventure" name="game-genre" value="adventure">
+                            <input type="checkbox" id="adventure" name="game-genre" value="adventure" onChange="displayPreference()">
                             <label for="adventure">Adventure</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="card" name="game-genre" value="card">
+                            <input type="checkbox" id="card" name="game-genre" value="card" onChange="displayPreference()">
                             <label for="card">Card</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="rpg" name="game-genre" value="rpg">
+                            <input type="checkbox" id="rpg" name="game-genre" value="rpg" onChange="displayPreference()">
                             <label for="rpg">RPG</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="sports" name="game-genre" value="sports">
+                            <input type="checkbox" id="sports" name="game-genre" value="sports" onChange="displayPreference()">
                             <label for="sports">Sports</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="strategy" name="game-genre" value="strategy">
+                            <input type="checkbox" id="strategy" name="game-genre" value="strategy" onChange="displayPreference()">
                             <label for="strategy">Strategy</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="other" name="game-genre" value="other">
+                            <input type="checkbox" id="other" name="game-genre" value="other" onChange="displayPreference()">
                             <label for="other">Other</label>
                         </div>
                     </div>
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap preference-wrap">
                         <label for="pc-preference">What do you like/dislike about you PC setup? Why?</label>
-                        <textarea id="pc-preference" class="glow" name="pc-preference"></textarea>
+                        <textarea id="pc-preference" class="glow" name="pc-preference" onChange="displayEnter()"></textarea>
                     </div>
                     
-                    <div class="survey-item-wrap">
+                    <div class="survey-item-wrap enter-wrap">
                         <input class="enter-button" type="submit" value="Enter Giveaway">
                     </div>
                 </form>
@@ -173,4 +177,5 @@
         </nav>
         <p class="copyright">&copy; 1991 to 2022 Game Informer. All Rights Reserved.</p>
     </footer>
+    <script src="/js/main.js"></script>
 </body>

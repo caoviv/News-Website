@@ -187,7 +187,7 @@ footer {
     font-size: 1.2em;
 }
 
-/* Giveaway-survery styles */
+/* Giveaway-survey styles */
 .giveaway-wrap {
    display: flex;
    justify-content: center;
@@ -214,19 +214,7 @@ footer {
     width: 100%;
 }
 
-.giveaway-text h1 {
-    text-align: center;
-}
-
-.giveaway-text h4 {
-    text-align: center;
-}
-
-.prize {
-    text-align: center;
-}
-
-.requirement {
+.center {
     text-align: center;
 }
 
@@ -234,10 +222,21 @@ footer {
     font-size: 12px;
     font-weight: bold;
     font-style: italic;
+    text-align: center;
 }
 
 .spec-heading {
-    font-weight: bold;
+    text-align: center;
+}
+
+.specs {
+    display: none;
+}
+
+.exclamation-mark {
+    position: absolute;
+    width: 20px;
+    transform: rotate(340deg);
 }
 
 .giveaway-survey {
@@ -262,6 +261,13 @@ footer {
     box-shadow: 0 0 10px #ffd175;
 }
 
+.email-wrap {
+    display: none;
+}
+
+.dob-wrap {
+    display: none;
+}
 .dob {
     border: 2px solid #dadada;
     border-radius: 7px;
@@ -273,9 +279,36 @@ footer {
     box-shadow: 0 0 10px #ffd175;
 }
 
+.gender-wrap {
+    display: none;
+}
+
+.fav-wrap {
+    display: none;
+}
+
+.fav-wrap {
+    display: none;
+}
+
+.frequency-wrap {
+    display: none;
+}
+
+.genre-wrap {
+    display: none;
+}
+
+.preference-wrap {
+    display: none;
+}
 #pc-preference {
     width: 100%;
     resize: vertical;
+}
+
+.enter-wrap{
+    display: none;
 }
 
 .enter-button {
