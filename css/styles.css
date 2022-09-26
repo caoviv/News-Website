@@ -112,6 +112,10 @@ footer {
     content: url(/img/nav-icon.png);
 }
 
+.header-nav a:link {
+    color: #000000;
+}
+
 .header-nav a:visited {
     color: #000000;
 }
